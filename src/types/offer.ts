@@ -1,4 +1,4 @@
-import { AssetType } from "stellar-base";
+import { AssetType } from "@digitalbits-blockchain/js-stellar-base";
 import { Horizon } from "./../horizon_api";
 
 export interface OfferAsset {
