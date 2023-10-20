@@ -1,4 +1,4 @@
-import { Asset } from "stellar-base";
+import { Asset } from "@digitalbits-blockchain/js-stellar-base";
 import { Omit } from "utility-types";
 import { Horizon } from "./horizon_api";
 

@@ -1,6 +1,6 @@
 /* tslint:disable:variable-name */
 
-import { Account as BaseAccount } from "stellar-base";
+import { Account as BaseAccount } from "@digitalbits-blockchain/js-stellar-base";
 import { Horizon } from "./horizon_api";
 import { ServerApi } from "./server_api";
 
