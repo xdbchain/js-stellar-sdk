@@ -113,7 +113,7 @@ const server = new StellarSdk.Server('https://horizon-testnet.stellar.org');
 
     const transaction = new StellarSdk.TransactionBuilder(account, { fee, networkPassphrase: StellarSdk.Networks.TESTNET })
         .addOperation(
-            // this operation funds the new account with XLM
+            // this operation funds the new account with XDB
             StellarSdk.Operation.payment({
                 destination: "GASOCNHNNLYFNMDJYQ3XFMI7BYHIOCFW3GJEOWRPEGK2TDPGTG2E5EDW",
                 asset: StellarSdk.Asset.native(),

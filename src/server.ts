@@ -9,7 +9,7 @@ import {
   StrKey,
   Transaction,
   xdr,
-} from "stellar-base";
+} from "@digitalbits-blockchain/js-stellar-base";
 import URI from "urijs";
 
 import { CallBuilder } from "./call_builder";
@@ -46,14 +46,14 @@ import HorizonAxiosClient, {
 
 export const SUBMIT_TRANSACTION_TIMEOUT = 60 * 1000;
 
-const STROOPS_IN_LUMEN = 10000000;
+const STROOPS_IN_XDB = 10000000;
 
 // ACCOUNT_REQUIRES_MEMO is the base64 encoding of "1".
 // SEP 29 uses this value to define transaction memo requirements for incoming payments.
 const ACCOUNT_REQUIRES_MEMO = "MQ==";
 
-function _getAmountInLumens(amt: BigNumber) {
-  return new BigNumber(amt).div(STROOPS_IN_LUMEN).toString();
+function _getAmountInXdbs(amt: BigNumber) {
+  return new BigNumber(amt).div(STROOPS_IN_XDB).toString();
 }
 
 /**
@@ -423,9 +423,9 @@ export class Server {
                     sellerId,
                     offerId: offerClaimed.offerId().toString(),
                     assetSold,
-                    amountSold: _getAmountInLumens(claimedOfferAmountSold),
+                    amountSold: _getAmountInXdbs(claimedOfferAmountSold),
                     assetBought,
-                    amountBought: _getAmountInLumens(claimedOfferAmountBought),
+                    amountBought: _getAmountInXdbs(claimedOfferAmountBought),
                   };
                 });
 
@@ -443,7 +443,7 @@ export class Server {
                   offerId: offerXDR.offerId().toString(),
                   selling: {},
                   buying: {},
-                  amount: _getAmountInLumens(offerXDR.amount().toString()),
+                  amount: _getAmountInXdbs(offerXDR.amount().toString()),
                   price: {
                     n: offerXDR.price().n(),
                     d: offerXDR.price().d(),
@@ -474,8 +474,8 @@ export class Server {
                 currentOffer,
 
                 // this value is in stroops so divide it out
-                amountBought: _getAmountInLumens(amountBought),
-                amountSold: _getAmountInLumens(amountSold),
+                amountBought: _getAmountInXdbs(amountBought),
+                amountSold: _getAmountInXdbs(amountSold),
 
                 isFullyOpen:
                   !offersClaimed.length && effect !== "manageOfferDeleted",
@@ -674,7 +674,7 @@ export class Server {
   }
 
   /**
-   * @param {string} address The Stellar ID that you want Friendbot to send lumens to
+   * @param {string} address The Stellar ID that you want Friendbot to send XDBs to
    * @returns {FriendbotBuilder} New {@link FriendbotBuilder} instance configured with the current
    * Horizon server configuration
    * @private
