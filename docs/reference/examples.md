@@ -65,9 +65,9 @@ const server = new StellarSdk.Server('https://horizon-testnet.stellar.org');
     // Add a payment operation to the transaction
     .addOperation(StellarSdk.Operation.payment({
       destination: receiverPublicKey,
-      // The term native asset refers to lumens
+      // The term native asset refers to XDBs
       asset: StellarSdk.Asset.native(),
-      // Specify 350.1234567 lumens. Lumens are divisible to seven digits past
+      // Specify 350.1234567 XDBs. XDBs are divisible to seven digits past
       // the decimal. They are represented in JS Stellar SDK in string format
       // to avoid errors from the use of the JavaScript Number data structure.
       amount: '350.1234567',
