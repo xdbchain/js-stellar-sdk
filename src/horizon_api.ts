@@ -1,4 +1,4 @@
-import { AssetType, MemoType } from "@digitalbits-blockchain/js-stellar-base";
+import { AssetType, MemoType } from "@xdbchain/js-stellar-base";
 
 /* tslint:disable-next-line:no-namespace */
 export namespace Horizon {

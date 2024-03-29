@@ -98,7 +98,7 @@ See the [Building Transactions](https://github.com/stellar/js-stellar-base/blob/
 ## Submitting transactions
 Once you have built your transaction, you can submit it to the Stellar network with `Server.submitTransaction()`.
 ```js
-const StellarSdk = require('@digitalbits-blockchain/js-stellar-sdk')
+const StellarSdk = require('@xdbchain/js-stellar-sdk')
 const server = new StellarSdk.Server('https://horizon.futurenet.xdbchain.com');
 
 (async function main() {

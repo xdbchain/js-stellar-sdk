@@ -29,7 +29,7 @@ export {
 export * from "./utils";
 
 // expose classes and functions from stellar-base
-export * from "@digitalbits-blockchain/js-stellar-base";
+export * from "@xdbchain/js-stellar-base";
 
 export { version };
 

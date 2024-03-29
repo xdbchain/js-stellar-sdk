@@ -1090,20 +1090,6 @@
     tar "^6.1.11"
     tar-stream "^2.1.4"
 
-"@digitalbits-blockchain/js-stellar-base@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@digitalbits-blockchain/js-stellar-base/-/js-stellar-base-1.0.1.tgz#8c713321984b3ddbe37be411395700fb7a18de02"
-  integrity sha512-zRB4lKafOslRhr92e3yrtPQGQj4hNDbLbRVEQVvxnflsui2ZEYTVNygR6PZnGolgIEdCtba0+taH2wtGcOb4Cw==
-  dependencies:
-    base32.js "^0.1.0"
-    bignumber.js "^9.1.2"
-    buffer "^6.0.3"
-    js-xdr "^3.0.0"
-    sha.js "^2.3.6"
-    tweetnacl "^1.0.3"
-  optionalDependencies:
-    sodium-native "^4.0.1"
-
 "@discoveryjs/json-ext@^0.5.0":
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.7.tgz#1d572bfbbe14b7704e0ba0f39b74815b84870d70"
@@ -1810,6 +1796,20 @@
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/@webpack-cli/serve/-/serve-2.0.5.tgz#325db42395cd49fe6c14057f9a900e427df8810e"
   integrity sha512-lqaoKnRYBdo1UgDX8uF24AfGMifWK19TxPmM5FHc2vAGxrJ/qtyUyFBWoY1tISZdelsQ5fBcOusifo5o5wSJxQ==
+
+"@xdbchain/js-stellar-base@9.0.0":
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/@xdbchain/js-stellar-base/-/js-stellar-base-9.0.0.tgz#fa93144bb5ba2d4ba93ffe2bd7985408d592fbf4"
+  integrity sha512-iB/lqfC2u1sU2rQUcxZcH+XZnvtxNiIb/sfBt6ZDCQ3jac++TZ/z5jdnbCIKsF6D/rkvZs6JhfpzWx7FMDecKA==
+  dependencies:
+    base32.js "^0.1.0"
+    bignumber.js "^9.1.2"
+    buffer "^6.0.3"
+    js-xdr "^3.0.0"
+    sha.js "^2.3.6"
+    tweetnacl "^1.0.3"
+  optionalDependencies:
+    sodium-native "^4.0.1"
 
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { Networks } from "@digitalbits-blockchain/js-stellar-base";
+import { Networks } from "@xdbchain/js-stellar-base";
 import toml from "toml";
 import { Config } from "./config";
 

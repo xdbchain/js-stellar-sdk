@@ -11,7 +11,7 @@ import {
   TimeoutInfinite,
   Transaction,
   TransactionBuilder,
-} from "@digitalbits-blockchain/js-stellar-base";
+} from "@xdbchain/js-stellar-base";
 import { InvalidSep10ChallengeError } from "./errors";
 import { ServerApi } from "./server_api";
 

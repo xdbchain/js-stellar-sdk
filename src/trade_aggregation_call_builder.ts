@@ -1,5 +1,5 @@
 /* tslint:disable: variable-name */
-import { Asset } from "@digitalbits-blockchain/js-stellar-base";
+import { Asset } from "@xdbchain/js-stellar-base";
 import { CallBuilder } from "./call_builder";
 import { BadRequestError } from "./errors";
 import { Horizon } from "./horizon_api";
