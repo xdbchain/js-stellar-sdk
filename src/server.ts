@@ -9,7 +9,7 @@ import {
   StrKey,
   Transaction,
   xdr,
-} from "@digitalbits-blockchain/js-stellar-base";
+} from "@xdbchain/js-stellar-base";
 import URI from "urijs";
 
 import { CallBuilder } from "./call_builder";

@@ -1,7 +1,7 @@
 /* tslint:disable:variable-name */
 
 import forIn from "lodash/forIn";
-import { Account as BaseAccount } from "@digitalbits-blockchain/js-stellar-base";
+import { Account as BaseAccount } from "@xdbchain/js-stellar-base";
 import { Horizon } from "./horizon_api";
 import { ServerApi } from "./server_api";
 
