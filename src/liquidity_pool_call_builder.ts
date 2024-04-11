@@ -1,4 +1,4 @@
-import { Asset } from "@digitalbits-blockchain/js-stellar-base";
+import { Asset } from "@xdbchain/js-stellar-base";
 
 import { CallBuilder } from "./call_builder";
 import { ServerApi } from "./server_api";

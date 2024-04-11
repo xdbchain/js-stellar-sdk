@@ -1,5 +1,5 @@
 import axios from "axios";
-import { StrKey } from "@digitalbits-blockchain/js-stellar-base";
+import { StrKey } from "@xdbchain/js-stellar-base";
 import URI from "urijs";
 
 import { Config } from "./config";

@@ -1,7 +1,7 @@
 {
-  "name": "@digitalbits-blockchain/js-stellar-sdk",
-  "version": "1.0.2",
-  "description": "stellar-sdk is a library for working with the Stellar Horizon server.",
+  "name": "@xdbchain/js-stellar-sdk",
+  "version": "10.4.4",
+  "description": "A library for working with the XDB CHAIN Horizon server.",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "files": [
@@ -134,7 +134,7 @@
     "axios": "0.25.0",
     "bignumber.js": "^4.0.0",
     "detect-node": "^2.0.4",
-    "@digitalbits-blockchain/js-stellar-base": "1.0.3",
+    "@xdbchain/js-stellar-base": "^9.0.3",
     "es6-promise": "^4.2.4",
     "eventsource": "^1.1.1",
     "lodash": "^4.17.21",
